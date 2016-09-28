@@ -1,0 +1,43 @@
+@import "../helpers/_mixins";
+@include fontFace('angelina','../fonts/angelina');
+
+h2 {
+	color:#5a2937;
+	font-family:'angelina';
+	font-size: 60px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+#aboutUs {
+	padding: 5% 0%;
+	p {
+		line-height: 2;
+		margin-bottom: 40px;
+	}
+	.content img {
+		max-width: 220px;
+		width: 100%;
+		float:right;
+	}
+	.content {
+		margin-top: 40px;
+	}
+	h4 {
+		color:#5a2937;
+		font-weight: bold;
+		letter-spacing:1px;
+	}
+	.insta {
+		margin-bottom: 60px;
+
+		a:hover, h4:hover {
+			color: #33171f;
+			text-decoration: none;
+		}
+
+		img {
+			width:5%;
+			margin: auto;
+		}
+	}
+}

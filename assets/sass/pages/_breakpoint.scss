@@ -1,0 +1,27 @@
+#breakpoint {
+	padding: 60px 0;
+	position:relative;
+	top:700px;
+	height: 500px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top:0;
+    	bottom:0;
+    	right: 0;
+    	left: 0;
+		background-color: rgba(0,0,0,0.9);
+	}
+
+	img {
+		width:30%;
+	}
+	h4 {
+		color:#fff;
+		font-size: 21px;
+		font-style: italic;
+		padding: 3% 9%;
+		line-height: 1.7;
+	}
+}

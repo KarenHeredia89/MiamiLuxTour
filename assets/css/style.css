@@ -1,0 +1,417 @@
+#mainNav {
+  background-color: #5a2937 !important;
+  padding: 5px 0px;
+  border: transparent; }
+  #mainNav .navbar-brand img {
+    width: 30%; }
+  #mainNav a {
+    color: #fff; }
+    #mainNav a:hover {
+      font-weight: bold;
+      color: #00a99d; }
+  #mainNav li.language {
+    margin-left: 30px; }
+  #mainNav li.language a {
+    display: inline-block;
+    margin: 0px -15px; }
+  #mainNav ul {
+    margin-top: -40px; }
+
+header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  header #slider {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    header #slider li {
+      height: 100vh !important;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+      header #slider li:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,ffffff+0,000000+100&0+24,1+100 */ }
+
+/* Font downloaded from FontsForWeb.com */
+@font-face {
+  font-family: "angelina";
+  src: url("../fonts/angelina.eot");
+  src: url("../fonts/angelina.eot?#iefix") format("embedded-opentype"), url("../fonts/angelina.woff") format("woff"), url("../fonts/angelina.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+h2 {
+  color: #5a2937;
+  font-family: 'angelina';
+  font-size: 60px;
+  letter-spacing: 2px;
+  text-align: center; }
+
+#aboutUs {
+  padding: 5% 0%; }
+  #aboutUs p {
+    line-height: 2;
+    margin-bottom: 40px; }
+  #aboutUs .content img {
+    max-width: 220px;
+    width: 100%;
+    float: right; }
+  #aboutUs .content {
+    margin-top: 40px; }
+  #aboutUs h4 {
+    color: #5a2937;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  #aboutUs .insta {
+    margin-bottom: 60px; }
+    #aboutUs .insta a:hover, #aboutUs .insta h4:hover {
+      color: #33171f;
+      text-decoration: none; }
+    #aboutUs .insta img {
+      width: 5%;
+      margin: auto; }
+
+#breakpoint {
+  padding: 60px 0;
+  position: relative;
+  top: 700px;
+  height: 500px; }
+  #breakpoint:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); }
+  #breakpoint img {
+    width: 30%; }
+  #breakpoint h4 {
+    color: #fff;
+    font-size: 21px;
+    font-style: italic;
+    padding: 3% 9%;
+    line-height: 1.7; }
+
+#services {
+  padding: 5% 0%; }
+  #services .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; }
+  #services .visible h3 {
+    width: 100%;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 18px; }
+    #services .visible h3:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 50%;
+      border-bottom: 1px solid #fff;
+      width: 200px;
+      -webkit-transform: translate(-50%, 0%);
+      -moz-transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%); }
+  #services .imagen {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center; }
+    #services .imagen:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5); }
+    #services .imagen .imagenHover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      opacity: 0;
+      text-align: left;
+      padding: 20px;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+      #services .imagen .imagenHover:hover {
+        opacity: 1; }
+      #services .imagen .imagenHover button {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        outline: none;
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%); }
+    #services .imagen h5 {
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 10px; }
+      #services .imagen h5:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-bottom: 1px solid #fff; }
+  #services .imagen.imagen-01 {
+    background-image: url("../img/servicios/imagen-01.jpg"); }
+  #services .imagen.imagen-02 {
+    background-image: url("../img/ser2.jpg"); }
+  #services .imagen.imagen-03 {
+    background-image: url("../img/servicios/imagen-03.jpg"); }
+  #services .imagen.imagen-04 {
+    background-image: url("../img/servicios/imagen-04.jpg"); }
+  #services .imagen.imagen-05 {
+    background-image: url("../img/servicios/imagen-05.jpg"); }
+  #services .imagen.imagen-06 {
+    background-image: url("../img/servicios/imagen-06.jpg"); }
+  #services .modal {
+    background-color: black;
+    position: fixed; }
+  #services .contenedorModal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #services #form {
+    margin: 20px;
+    max-width: 400px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: left;
+    color: #fff; }
+    #services #form button.close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      bottom: auto;
+      width: auto;
+      transform: translate(0);
+      background-color: transparent;
+      border-bottom: transparent; }
+    #services #form h3 {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0); }
+    #services #form .mod {
+      font-size: 40px;
+      color: #fff;
+      opacity: 1; }
+    #services #form input {
+      background-color: transparent;
+      border: transparent;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      margin-bottom: 5%;
+      outline: none;
+      color: #fff; }
+    #services #form .datos {
+      width: 49%;
+      display: inline-block; }
+    #services #form select {
+      background-color: #333;
+      border: transparent;
+      outline: none;
+      padding: 0px;
+      color: #fff;
+      margin: 10px 0;
+      width: 100%; }
+    #services #form textarea {
+      background-color: transparent;
+      border: 1px solid #fff;
+      padding: 5px;
+      margin: 10px 0;
+      outline: none;
+      resize: none;
+      color: #fff;
+      width: 100%;
+      height: 200px; }
+    #services #form button {
+      width: 100%; }
+
+button {
+  background-color: #00a99d;
+  border: transparent;
+  border-bottom: 3px solid #02423c;
+  border-radius: 2px;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none; }
+  button:hover {
+    background-color: #02423c;
+    border-bottom: 3px solid #00a99d;
+    outline: none; }
+
+#contact {
+  color: #fff;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px; }
+  #contact .container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #contact .texture {
+    background: url(../img/texture.png); }
+  #contact #form {
+    padding: 20px;
+    margin: 20px;
+    max-width: 600px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: left;
+    color: #fff; }
+    #contact #form button.close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: auto;
+      bottom: auto;
+      width: auto;
+      transform: translate(0);
+      background-color: transparent;
+      border-bottom: transparent; }
+    #contact #form h3 {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0); }
+    #contact #form .mod {
+      font-size: 40px;
+      color: #fff;
+      opacity: 1; }
+    #contact #form input {
+      background-color: transparent;
+      border: transparent;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      margin-bottom: 5%;
+      outline: none;
+      color: #fff; }
+    #contact #form .datos {
+      width: 49%;
+      display: inline-block; }
+    #contact #form select {
+      background-color: #333;
+      border: transparent;
+      outline: none;
+      padding: 0px;
+      color: #fff;
+      margin: 10px 0;
+      width: 100%; }
+    #contact #form textarea {
+      background-color: transparent;
+      border: 1px solid #fff;
+      padding: 5px;
+      margin: 10px 0;
+      outline: none;
+      resize: none;
+      color: #fff;
+      width: 100%;
+      height: 200px; }
+    #contact #form button {
+      width: 100%; }
+  #contact .social {
+    margin-top: 40px; }
+    #contact .social img {
+      width: 30px;
+      margin-right: 10px; }
+
+@media (max-width: 550px) {
+  #mainNav .navbar-brand img {
+    position: absolute;
+    width: 60%; }
+
+  header h1 {
+    font-size: 40px; }
+  header p {
+    font-size: 15px; }
+
+  #aboutUs {
+    padding: 0%; }
+    #aboutUs p {
+      line-height: 1.5;
+      margin-bottom: 10px; }
+    #aboutUs .content img {
+      float: none;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      margin-bottom: 10px; }
+    #aboutUs .insta img {
+      width: 10%;
+      margin: auto; }
+
+  #breakpoint {
+    height: auto; }
+    #breakpoint img {
+      width: 50%; }
+    #breakpoint h4 {
+      font-size: 15px;
+      line-height: 1.7; }
+
+  #services .visible img {
+    width: 100%; }
+  #services .visible .absoluteTitle {
+    position: absolute;
+    color: #fff; }
+    #services .visible .absoluteTitle h3 {
+      font-size: 20px;
+      font-weight: bold; }
+  #services .hover {
+    width: 100%; }
+    #services .hover h5 {
+      line-height: 1.5; }
+    #services .hover h6 {
+      font-size: 13px; }
+    #services .hover p {
+      font-size: 10px;
+      letter-spacing: 0.5px; } }
+
+/*# sourceMappingURL=style.css.map */
