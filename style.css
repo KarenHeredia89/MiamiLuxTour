@@ -38,15 +38,13 @@ header {
         top: 0;
         bottom: 0;
         right: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,ffffff+0,000000+100&0+24,1+100 */ }
 
 /* Font downloaded from FontsForWeb.com */
 @font-face {
   font-family: "angelina";
-  src: url("../fonts/angelina.eot");
-  src: url("../fonts/angelina.eot?#iefix") format("embedded-opentype"), url("../fonts/angelina.woff") format("woff"), url("../fonts/angelina.ttf") format("truetype");
+  src: url("assets/fonts/angelina.eot");
+  src: url("assets/fonts/angelina.eot?#iefix") format("embedded-opentype"), url("assets/fonts/angelina.woff") format("woff"), url("assets/fonts/angelina.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 h2 {
@@ -68,17 +66,20 @@ h2 {
   #aboutUs .content {
     margin-top: 40px; }
   #aboutUs h4 {
-    color: #5a2937;
+    color: #00a99d;
     font-weight: bold;
     letter-spacing: 1px; }
   #aboutUs .insta {
     margin-bottom: 60px; }
-    #aboutUs .insta a:hover, #aboutUs .insta h4:hover {
-      color: #33171f;
-      text-decoration: none; }
     #aboutUs .insta img {
       width: 5%;
       margin: auto; }
+    #aboutUs .insta svg #instagram-back,
+    #aboutUs .insta svg #facebook-back {
+      fill: #00a99d; }
+    #aboutUs .insta svg #instagram-instagram,
+    #aboutUs .insta svg #facebook-facebook {
+      fill: #fff; }
 
 #breakpoint {
   padding: 60px 0;
@@ -111,6 +112,7 @@ h2 {
     align-items: center;
     margin-bottom: 20px; }
   #services .visible h3 {
+    text-transform: uppercase;
     width: 100%;
     padding-bottom: 10px;
     position: absolute;
@@ -169,6 +171,7 @@ h2 {
       #services .imagen .imagenHover:hover {
         opacity: 1; }
       #services .imagen .imagenHover button {
+        text-transform: uppercase;
         position: absolute;
         bottom: 10%;
         left: 50%;
@@ -178,6 +181,7 @@ h2 {
         -o-transform: translate(-50%, 0%);
         transform: translate(-50%, 0%); }
     #services .imagen h5 {
+      text-transform: uppercase;
       font-weight: bold;
       position: relative;
       padding-bottom: 10px; }
