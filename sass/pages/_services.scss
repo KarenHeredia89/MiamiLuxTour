@@ -1,10 +1,11 @@
 #services {
 	padding: 5% 0%;
 
-	.row {
+	.row_services {
 		display: flex;
 	    flex-direction: row;
-	    justify-content: space-between;
+	    flex-wrap: wrap;
+	    justify-content: center;
 	    align-items: center;
 	    margin-bottom: 20px;
 	}

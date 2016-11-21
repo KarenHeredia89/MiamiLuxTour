@@ -3,7 +3,7 @@
   padding: 5px 0px;
   border: transparent; }
   #mainNav .navbar-brand img {
-    width: 30%; }
+    width: 100%; }
   #mainNav a {
     color: #fff; }
     #mainNav a:hover {
@@ -14,8 +14,12 @@
   #mainNav li.language a {
     display: inline-block;
     margin: 0px -15px; }
-  #mainNav ul {
-    margin-top: -40px; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent !important; }
+
+.navbar-default .navbar-toggle {
+  border-color: transparent !important; }
 
 header {
   position: fixed;
@@ -38,7 +42,22 @@ header {
         top: 0;
         bottom: 0;
         right: 0;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,ffffff+0,000000+100&0+24,1+100 */ }
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.4);
+        color: rgba(0, 0, 0, 0.4); }
+
+.slider_text {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+  .slider_text .img_first {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /* Font downloaded from FontsForWeb.com */
 @font-face {
@@ -75,16 +94,17 @@ h2 {
       width: 5%;
       margin: auto; }
     #aboutUs .insta svg #instagram-back,
-    #aboutUs .insta svg #facebook-back {
+    #aboutUs .insta svg #facebook-back,
+    #aboutUs .insta svg #XMLID_3_ {
       fill: #00a99d; }
     #aboutUs .insta svg #instagram-instagram,
-    #aboutUs .insta svg #facebook-facebook {
+    #aboutUs .insta svg #facebook-facebook,
+    #aboutUs .insta svg #XMLID_9_ {
       fill: #fff; }
 
 #breakpoint {
   padding: 60px 0;
   position: relative;
-  top: 700px;
   height: 500px; }
   #breakpoint:before {
     content: '';
@@ -105,10 +125,11 @@ h2 {
 
 #services {
   padding: 5% 0%; }
-  #services .row {
+  #services .row_services {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px; }
   #services .visible h3 {
@@ -367,6 +388,15 @@ button {
       width: 30px;
       margin-right: 10px; }
 
+@media (max-width: 800px) {
+  .navbar-collapse li a {
+    font-size: 10px; }
+
+  #services .imagen {
+    width: 50%; }
+
+  .slider_text .img_first {
+    width: 80%; } }
 @media (max-width: 550px) {
   #mainNav .navbar-brand img {
     position: absolute;
@@ -417,5 +447,42 @@ button {
     #services .hover p {
       font-size: 10px;
       letter-spacing: 0.5px; } }
+@media (max-width: 414px) {
+  #mainNav .navbar-brand img {
+    width: 50%; }
+
+  .navbar-collapse li a {
+    font-size: 10px; }
+
+  #aboutUs p {
+    line-height: 160%;
+    margin-bottom: 10px;
+    text-align: center; }
+  #aboutUs .content {
+    margin-top: 0px; }
+  #aboutUs h4 {
+    line-height: 160%; }
+
+  #services .imagen {
+    width: 100%; }
+
+  #contact #form {
+    margin: 0px; } }
+@media (max-width: 736px) and (orientation: landscape) {
+  #mainNav a {
+    width: 33%; }
+
+  .slider_text .img_first {
+    width: 50%; }
+
+  #aboutUs .content img {
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-bottom: 10px; } }
+@media (max-width: 480px) and (orientation: landscape) {
+  #services .imagen {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

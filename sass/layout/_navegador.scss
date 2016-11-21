@@ -4,7 +4,7 @@
 	border: transparent;
 
 	.navbar-brand img {
-		width: 30%;
+		width: 100%;
 	}
 	a {
 		color: #fff;
@@ -20,7 +20,11 @@
 		display: inline-block;
 		margin: 0px -15px;
 	}
-	ul {
-		margin-top: -40px;
-	}
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent !important;
 }
