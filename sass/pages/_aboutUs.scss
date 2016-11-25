@@ -1,9 +1,10 @@
 @import "../helpers/_mixins";
 @include fontFace('angelina','assets/fonts/angelina');
+@include fontFace('apple','assets/fonts/apple_chancery/apple_chancery-webfont');
 
 h2 {
 	color:#5a2937;
-	font-family:'angelina';
+	font-family:'apple';
 	font-size: 60px;
 	letter-spacing: 2px;
 	text-align: center;

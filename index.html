@@ -186,35 +186,35 @@
 			    		</div>
 			    		<div id="myModal" class="modal fade" role="dialog">
 							<div class="contenedorModal">
-			    				<form id="form">
+			    				<form id="form" action="agrega.php" method="POST">
 									<button type="button" class="mod close" data-dismiss="modal">&times;</button>
 									<h3>HOME AWAY FROM HOME</h3>
-			    					<input class="datos" type="text" name="" placeholder="* Name:">
-			    					<input class="datos" type="text" name="" placeholder="* Email:">
+			    					<input class="datos" type="text" name="name" placeholder="* Name:">
+			    					<input class="datos" type="text" name="email" placeholder="* Email:">
 	    							<p>Service you are interested in?</p>
-									<select name="">
+									<select name="interest">
 										<optgroup selected="selected" label="Select an option">
-											<option>Short term rental/vacation housing</option>
-											<option>Yearly rental</option>
-											<option>Buying a condo/house</option>
-											<option>Selling a condo/house</option>
-											<option>Fishing</option>
-											<option>Boat trip</option>
-											<option>Personal Shopper</option>
-											<option>Restaurants</option>
-											<option>Chauffeur</option>
-											<option>Other</option>
+											<option value="Short term rental/vacation housing">Short term rental/vacation housing</option>
+											<option value="Yearly rental">Yearly rental</option>
+											<option value="Buying a condo/house">Buying a condo/house</option>
+											<option value="Selling a condo/house">Selling a condo/house</option>
+											<option value="Fishing">Fishing</option>
+											<option value="Boat trip">Boat trip</option>
+											<option value="Personal Shopper">Personal Shopper</option>
+											<option value="Restaurants">Restaurants</option>
+											<option value="Chauffeur">Chauffeur</option>
+											<option value="Other">Other</option>
 										</optgroup>
 									</select>
 					    			<p>For real estate rental and purchase:</p>
-			    					<div class="datos"><span># of Bedrooms: </span><input type="text" name=""></div>
-			    					<div class="datos"><span># of Bathrooms: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Arrival Date: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Departure Date: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Arrival Time: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Departure Time: </span><input type="text" name=""></div>
-			    					<textarea placeholder="Comments: " rows="3"></textarea>
-			    					<button>SEND</button>
+			    					<div class="datos"><span># of Bedrooms: </span><input type="text" name="bedrooms"></div>
+			    					<div class="datos"><span># of Bathrooms: </span><input type="text" name="bathrooms"></div>
+			    					<div class="datos"><span>Arrival Date: </span><input type="text" name="arrival_date"></div>
+			    					<div class="datos"><span>Departure Date: </span><input type="text" name="departure_date"></div>
+			    					<div class="datos"><span>Arrival Time: </span><input type="text" name="arrival_time"></div>
+			    					<div class="datos"><span>Departure Time: </span><input type="text" name="departure_time"></div>
+			    					<textarea placeholder="Comments: " rows="3" type="text" name="comments"></textarea>
+			    					<button type="submit" value="enviar">SEND</button>
 			    				</form>
 			    			</div>	
 						</div>
