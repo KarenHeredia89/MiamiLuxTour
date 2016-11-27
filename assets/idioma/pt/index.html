@@ -7,7 +7,7 @@
 	  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  	<link rel="shortcut icon" href="../../img/favicon.png" type="image/png">
+	  	<link rel="shortcut icon" href="../../img/favicon.ico" type="image/png">
 
 	  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
 	  	<!-- Plugin CSS -->
@@ -55,7 +55,7 @@
 		                    </li>
 		                    <li class="language">
 		                        <a class="page-scroll" href="../../../index.html">EN &#47;</a>
-		                        <a style="color: #00a99d;" class="page-scroll" href="assets/idioma/pt/index.html">PT</a>
+		                        <a style="color: #00a99d;" class="page-scroll" href="index.html">PT</a>
 		                    </li>
 		                </ul>
 		                <ul>
@@ -191,35 +191,35 @@
 			    		</div>
 			    		<div id="myModal" class="modal fade" role="dialog">
 							<div class="contenedorModal">
-			    				<form id="form">
+			    				<form id="form" action="../../../enviar.php" method="POST">
 									<button type="button" class="mod close" data-dismiss="modal">&times;</button>
 									<h3>LAR DOCE LAR</h3>
-			    					<input class="datos" type="text" name="" placeholder="* Nome:">
-			    					<input class="datos" type="text" name="" placeholder="* Email:">
+			    					<input class="datos" type="text" name="name" placeholder="* Nome:" required>
+			    					<input class="datos" type="text" name="email" placeholder="* Email:" required>
 									<p>Serviço que você está interessado?</p>
-									<select name="">
+									<select name="interest">
 										<optgroup selected="selected" label="Select an option">
-											<option>Aluguel de curta temporada</option>
-											<option>Aluguel anual</option>
-											<option>Comprar um apartamento/casa</option>
-											<option>Vender um apartamento/casa</option>
-											<option>Pescaria</option>
-											<option>Passeio de Barco</option>
-											<option>Ajudante de Compras</option>
-											<option>Restaurantes</option>
-											<option>Motorista</option>
-											<option>Other</option>
+											<option value="Short term rental/vacation housing">Aluguel de curta temporada</option>
+											<option value="Yearly rental">Aluguel anual</option>
+											<option value="Buying a condo/house">Comprar um apartamento/casa</option>
+											<option value="Selling a condo/house">Vender um apartamento/casa</option>
+											<option value="Fishing">Pescaria</option>
+											<option value="Boat trip">Passeio de Barco</option>
+											<option value="Personal Shopper">Ajudante de Compras</option>
+											<option value="Restaurants">Restaurantes</option>
+											<option value="Chauffeur">Motorista</option>
+											<option value="Other">Other</option>
 										</optgroup>
 									</select>
 					    			<p>Para aluguel de imóveis e compra:</p>
-			    					<div class="datos"><span># de Quartos: </span><input type="text" name=""></div>
-			    					<div class="datos"><span># De Banheiros: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Data de chegada: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Data de partida: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Horario de chegada: </span><input type="text" name=""></div>
-			    					<div class="datos"><span>Horario de partida: </span><input type="text" name=""></div>
-			    					<textarea placeholder="Comentários: " rows="3"></textarea>
-			    					<button>ENVIAR</button>
+			    					<div class="datos"><span># de Quartos: </span><input type="text" name="bedrooms"></div>
+			    					<div class="datos"><span># De Banheiros: </span><input type="text" name="bathrooms"></div>
+			    					<div class="datos"><span>Data de chegada: </span><input type="date" name="arrival_date"></div>
+			    					<div class="datos"><span>Data de partida: </span><input type="date" name="departure_date"></div>
+			    					<div class="datos"><span>Horario de chegada: </span><input type="time" name="arrival_time"></div>
+			    					<div class="datos"><span>Horario de partida: </span><input type="time" name="departure_time"></div>
+			    					<textarea placeholder="Comentários: " rows="3" type="text" name="comments"></textarea>
+			    					<button type="submit" value="enviar">ENVIAR</button>
 			    				</form>
 			    			</div>	
 						</div>
@@ -237,13 +237,13 @@
 				    </div>
 			    	<div id="myModal3" class="modal fade" role="dialog">
 						<div class="contenedorModal">
-		    				<form id="form">
+		    				<form id="form" action="../../../enviar.php" method="POST">
 								<button type="button" class="mod close" data-dismiss="modal">&times;</button>
 								<h3>AJUDANTE DE COMPRAS</h3>
-		    					<input type="text" name="" placeholder="* Nome:">
-		    					<input type="text" name="" placeholder="* Email:">
-		    					<textarea placeholder="Comentários: " rows="3"></textarea>
-		    					<button>ENVIAR</button>
+		    					<input type="text" name="name" placeholder="* Nome:" required>
+		    					<input type="text" name="email" placeholder="* Email:" required>
+		    					<textarea placeholder="Comentários: " rows="3" type="text" name="commets"></textarea>
+		    					<button type="submit" value="enviar">ENVIAR</button>
 		    				</form>
 						</div>
 					</div>
@@ -260,13 +260,13 @@
 			    	</div>
 		    		<div id="myModal5" class="modal fade" role="dialog">
 						<div class="contenedorModal">
-		    				<form id="form">
+		    				<form id="form" action="../../../enviar.php" method="POST">
 								<button type="button" class="mod close" data-dismiss="modal">&times;</button>
 								<h3>Sinta a brisa do mar</h3>
-		    					<input class="datos" type="text" name="" placeholder="* Nome:">
-		    					<input class="datos" type="text" name="" placeholder="* Email:">
-		    					<textarea placeholder="Comentários: " rows="3"></textarea>
-		    					<button>ENVIAR</button>
+		    					<input class="datos" type="text" name="name" placeholder="* Nome:" required>
+		    					<input class="datos" type="text" name="email" placeholder="* Email:" required>
+		    					<textarea placeholder="Comentários: " rows="3" type="text" name="comments"></textarea>
+		    					<button type="submit" value="enviar">ENVIAR</button>
 		    				</form>
 						</div>
 					</div>
@@ -283,13 +283,13 @@
 			    	</div>
 		    		<div id="myModal5" class="modal fade" role="dialog">
 						<div class="contenedorModal">
-		    				<form id="form">
+		    				<form id="form" action="../../../enviar.php" method="POST">
 								<button type="button" class="mod close" data-dismiss="modal">&times;</button>
 								<h3>PESCA</h3>
-		    					<input class="datos" type="text" name="" placeholder="* Nome:">
-		    					<input class="datos" type="text" name="" placeholder="* Email:">
-		    					<textarea placeholder="Comentários: " rows="3"></textarea>
-		    					<button>ENVIAR</button>
+		    					<input class="datos" type="text" name="name" placeholder="* Nome:" required>
+		    					<input class="datos" type="text" name="email" placeholder="* Email:" required>
+		    					<textarea placeholder="Comentários: " rows="3" type="text" name="comments"></textarea>
+		    					<button type="submit" value="enviar">ENVIAR</button>
 		    				</form>
 						</div>
 					</div>	
@@ -307,13 +307,13 @@
 				    </div>
 				    <div id="myModal2" class="modal fade" role="dialog">
 						<div class="contenedorModal">
-		    				<form id="form">
+		    				<form id="form" action="../../../enviar.php" method="POST">
 								<button type="button" class="mod close" data-dismiss="modal">&times;</button>
 								<h3>RESTAURANTES</h3>
-		    					<input class="datos" type="text" name="" placeholder="* Nome:">
-		    					<input class="datos" type="text" name="" placeholder="* Email:">
-		    					<textarea placeholder="Comentários: " rows="3"></textarea>
-		    					<button>ENVIAR</button>
+		    					<input class="datos" type="text" name="name" placeholder="* Nome:" required>
+		    					<input class="datos" type="text" name="email" placeholder="* Email:" required>
+		    					<textarea placeholder="Comentários: " rows="3" type="text" name="comments"></textarea>
+		    					<button type="submit" value="enviar">ENVIAR</button>
 		    				</form>
 						</div>
 					</div>
@@ -329,13 +329,13 @@
 	    			</div>
 	    			<div id="myModal4" class="modal fade" role="dialog">
 						<div class="contenedorModal">
-		    				<form id="form">
+		    				<form id="form" action="enviar.php" method="POST">
 								<button type="button" class="mod close" data-dismiss="modal">&times;</button>
 								<h3>MOTORISTA</h3>
-		    					<input class="datos" type="text" name="" placeholder="* Nome:">
-		    					<input class="datos" type="text" name="" placeholder="* Email:">
-		    					<textarea placeholder="Comentários: " rows="3"></textarea>
-		    					<button>ENVIAR</button>
+		    					<input class="datos" type="text" name="name" placeholder="* Nome:" required>
+		    					<input class="datos" type="text" name="email" placeholder="* Email:" required>
+		    					<textarea placeholder="Comentários: " rows="3" type="text" name="comments"></textarea>
+		    					<button type="submit" value="enviar">ENVIAR</button>
 		    				</form>
 						</div>
 					</div>
@@ -349,33 +349,33 @@
 	    				<h2 style="color:#fff;">Entre em Contato !</h2>
 	    			</div>
 	    		</div>
-    				<form id="form">
-    					<input class="datos" type="text" name="" placeholder="* Nome:">
-    					<input class="datos" type="text" name="" placeholder="* Email:">
+    				<form id="form" action="../../../enviar.php" method="POST">
+    					<input class="datos" type="text" name="name" placeholder="* Nome:" required>
+    					<input class="datos" type="text" name="email" placeholder="* Email:" required>
 						<p>Serviço que você está interessado?</p>
-						<select name="">
+						<select name="interest">
 							<optgroup selected="selected" label="Select an option">
-								<option>Aluguel de curta temporada</option>
-								<option>Aluguel anual</option>
-								<option>Comprar um apartamento/casa</option>
-								<option>Vender um apartamento/casa</option>
-								<option>Pescaria</option>
-								<option>Passeio de Barco</option>
-								<option>Ajudante de Compras</option>
-								<option>Restaurantes</option>
-								<option>Motorista</option>
-								<option>Other</option>
+								<option value="Short term rental/vacation housing">Aluguel de curta temporada</option>
+								<option value="Yearly rental">Aluguel anual</option>
+								<option value="Buying a condo/house">Comprar um apartamento/casa</option>
+								<option value="Selling a condo/house">Vender um apartamento/casa</option>
+								<option value="Fishing">Pescaria</option>
+								<option value="Boat trip">Passeio de Barco</option>
+								<option value="Personal Shopper">Ajudante de Compras</option>
+								<option value="Restaurants">Restaurantes</option>
+								<option value="Chauffeur">Motorista</option>
+								<option value="Other">Other</option>
 							</optgroup>
 						</select>
 		    			<p>Para aluguel de imóveis e compra:</p>
-    					<div class="datos"><span># de Quartos: </span><input type="text" name=""></div>
-    					<div class="datos"><span># De Banheiros: </span><input type="text" name=""></div>
-    					<div class="datos"><span>Data de chegada: </span><input type="text" name=""></div>
-    					<div class="datos"><span>Data de partida: </span><input type="text" name=""></div>
-    					<div class="datos"><span>Horario de chegada: </span><input type="text" name=""></div>
-    					<div class="datos"><span>Horario de partida: </span><input type="text" name=""></div>
-    					<textarea placeholder="Comentários: " rows="3"></textarea>
-    					<button>ENVIAR</button>
+    					<div class="datos"><span># de Quartos: </span><input type="text" name="bedrooms"></div>
+    					<div class="datos"><span># De Banheiros: </span><input type="text" name="bathrooms"></div>
+    					<div class="datos"><span>Data de chegada: </span><input type="date" name="arrival_date"></div>
+    					<div class="datos"><span>Data de partida: </span><input type="date" name="departure_date"></div>
+    					<div class="datos"><span>Horario de chegada: </span><input type="time" name="arrival_time"></div>
+    					<div class="datos"><span>Horario de partida: </span><input type="time" name="departure_time"></div>
+    					<textarea placeholder="Comentários: " rows="3" type="text" name="comments"></textarea>
+    					<button type="submit" value="enviar">ENVIAR</button>
     				</form>
 	    		</div>
 	    	</div>
